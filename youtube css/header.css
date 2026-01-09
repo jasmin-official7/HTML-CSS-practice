@@ -1,0 +1,166 @@
+.header{
+    display: flex;
+    height: 55px;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    background-color: white;
+    border-bottom-width:1px ;
+    border-bottom-style: solid;
+    border-bottom-color:rgb(228,228,228) ;
+    z-index: 100;
+}
+.left-sec{
+    display: flex;
+    /* background-color: lightblue; */
+    align-items: center;
+}
+.hamburger-menu{
+    height: 24px;
+    margin-left: 24px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.yt-logo{
+    height: 20px;
+}
+.middle-sec{
+    display: flex;
+    align-items: center;
+    /* background-color: lightpink; */
+    flex: 1;
+    max-width: 500px;
+    margin-left: 40px;
+    margin-right: 35px;
+}
+.search-btn{
+    height: 39px;
+    width: 66px;
+    background-color: rgb(240,240,240);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192,192,192) ;
+    margin-left: -1px;
+    margin-right: 10px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.search-btn,
+.mic-btn,
+.upload-class-cont,
+.apps-count,
+.notif-class-container,
+.pfp-count{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.search-btn .tooltip,
+.mic-btn .tooltip,
+.upload-class-cont .tooltip,
+.apps-count .tooltip,
+.notif-class-container .tooltip,
+.pfp-count .tooltip{
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 8px;
+    padding-left: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -40px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none; /* when hover over tool tip ,wont display */
+    white-space: nowrap;
+}
+.search-btn:hover .tooltip,
+.mic-btn:hover .tooltip,
+.upload-class-cont:hover .tooltip,
+.apps-count:hover .tooltip,
+.notif-class-container:hover .tooltip,
+.pfp-count:hover .tooltip{
+    opacity: 1;
+}
+.search-icon{
+    height: 25px;
+}
+.mic-btn{
+    height: 39px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: gray(248,248,248);
+}
+.mic-icon{
+    height: 24px;
+}
+.search-bar{
+    flex:1;
+    height: 36px;
+    padding-left: 10px;
+    font-size: 16px;
+    /* border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192,192,192); */
+    border-radius: 2px;
+    border: 1px solid rgb(192,192,192);
+    box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05);
+    width: 0; /*dont shrink*/
+
+    border-top-left-radius: 25px;
+    border-bottom-left-radius:25px ;
+}
+.search-bar::placeholder{
+    font-size: 16px;
+}
+.right-sec{
+    display: flex;
+    /* background-color: lightblue; */
+    width: 180px;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    flex-shrink: 0; /*dont shrink*/
+}
+.upload,
+.apps,
+.notif{
+    height: 24px;
+}
+/* .apps{
+
+}
+.notif{
+
+} */
+.pfp{
+    height:32px ;
+    border-radius: 16px;
+}
+.notif-class-container{
+    position: relative;
+}
+.notif-count{
+    position: absolute;
+    background-color: rgb(200,0,0);
+    color: white;
+    top: -2px;
+    right: -8px;
+    font-size: 11px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+}
+.pfp{
+    cursor: pointer;
+}
