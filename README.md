@@ -1,3 +1,2 @@
-HTML CSS practice<br>
-draft
+HTML CSS practice<br>draft
 
